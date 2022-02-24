@@ -9,22 +9,76 @@
 	</head>
 
 	<body>
-        <header>
+        <!-- contenedor principal -->
+        <div class="wrap_principal">
 
-        </header>
+            <header>
+                <div class="titulo_h1">
+                    <h1>LARARRANTZA</h1>
+                </div>
+                <div class="wrap_logo_restaurante">
+                    <img src="imagenes/logo_restaurante.jpg" alt="logo restaurante"/>
+                </div>
+            </header>
 
-        <nav>
-            <ul>
-                <li><a href="#">INICIO</a></li>
-            </ul>
-        </nav>
+            <!-- navegador desplegable -->
+            <nav>
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">GALERIA</a></li>
+                    <li class="li_desplegable">
+                        <a href="#">CARTA</a>
+                        <div class="div_desplegable">
+                            <a href="#">ENTRANTES</a>
+                            <a href="#">CARNES</a>
+                            <a href="#">PESCADOS</a>
+                            <a href="#">POSTRES</a>
+                        </div>
+                    </li>
+                    <li><a href="#">EQUIPO</a></li>
+                    <li><a href="#">RESERVAS</a></li>
+                </ul>
+            </nav>
 
+            <!-- contenedor info monte -->
+            <section id="monte">
+                <img id="fondo_monte" src="imagenes/Background_huerta.jpeg" alt="fondo monte"/>
+                <div class="titulo_h2"><h2>DE LA HUERTA A TU MESA</h2></div>
+                <div id="wrap_huerta">
+                    <div id="imagen_huerta">
+                        <img src="#" alt="foto huerta"/>
+                    </div>
+                    <div id="wrap_texto_huerta">
+                        <p id="texto_huerta"></p>
+                    </div>
+                </div>
+            </section>
 
+            <!-- contenedor info pesca -->
+            <section id="pesca">
+                <div class="titulo_h2"><h2>DISFRUTA DE NUESTROS PESCADOS FRESCOS DE LONJA</h2></div>
+                <div id="wrap_pesca">
+                    <div id="imagen_puerto">
+                        <img src="#" alt="foto puerto"/>
+                    </div>
+                    <div id="wrap_texto_pesca">
+                        <p id="texto_pesca"></p>
+                    </div>
+                </div>
+            </section>
 
+            <!-- footer -->
+            <div class="footer">
+                <footer>
+                    <div class="wrap_logo_slowfood">
+                        <img src="imagenes/logoslowfood.png" alt="slowfood"/>
+                    </div>
+                    <div class="wrap_footer">
+                        <p class="texto_footer"></p>
+                    </div>
+                </footer>
+            </div>
 
-
-
-
-
+        </div>
 	</body>
 </html>

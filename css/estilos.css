@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'catalogueregular';
+    src: url('../fuentes/catalogue-webfont.woff2') format('woff2'),
+         url('../fuentes/catalogue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*/////////////////////////////////////////// ESTILOS COMUNES ////////////////////////////////////////////*/
+
+.wrap_principal {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+
+}
+
+.titulo_h1 {
+
+}
+
+.wrap_logo_restaurante {
+
+}
+
+/* navegador desplegable */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #666688; 
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;                          
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    padding: 12px 15px;  
+}
+
+nav li:hover {
+    background-color: #335;
+}
+
+.div_desplegable{
+    background-color: #f9f9f9; 
+    box-shadow: 5px 8px 25px 0px rgba(0,0,0, 0.2);
+    position: absolute;
+    display: none;
+    
+}
+
+.div_desplegable a {
+    padding: 9px 15px;
+    color: #335;
+    display: block;
+}
+
+.div_desplegable a:hover {
+    background-color: #e5e5f5;
+}
+
+.li_desplegable:hover .div_desplegable{
+    display: block;
+    
+}
+
+/* navegador desplegable */
+
+.footer{
+    
+}
+
+.wrap_logo_slowfood {
+
+}
+
+.wrap_footer  {
+
+}
+
+.texto_footer {
+
+}
+
+/*/////////////////////////////////////////// FIN ESTILOS COMUNES ////////////////////////////////////////////*/
+
+#monte {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#fondo_monte{
+    position: initial;
+    z-index: -1;
+    opacity: 0.70;
+    width: 1200px;
+}
+
+.titulo_h2 {
+
+}
+
+#wrap_huerta, #wrap_pesca {
+
+}
+
+#imagen_huerta {
+
+}
+
+#wrap_texto_huerta {
+
+}
+
+#texto_huerta {
+
+}
+
+#imagen_puerto {
+
+}
+
+#wrap_texto_pesca {
+
+}
+
+#texto_pesca {
+    
+}
+
