@@ -10,24 +10,22 @@
 
 	<body>
         <!-- contenedor principal -->
-        <div class="wrap_principal">
+        
 
+            
+            <div class="wrap_principal">
+            <!-- navegador desplegable -->
             <header>
                 <div class="wrap_logo_restaurante">
-                    <img src="imagenes/logo_restaurante.jpg" id="logo_restaurante" alt="logo restaurante"/>
+                    <a href="Inicio.html"><img src="imagenes/logo_restaurante.png" id="logo_restaurante" alt="logo restaurante"/></a>
                 </div>
-                <div class="titulo_h1">
-                    <h1>LARARRANTZA</h1>
-                </div>
-            </header>
-
-            <!-- navegador desplegable -->
-            <nav>
+                 
+                <nav>
                 <ul>
                     <li><a href="#">INICIO</a></li>
                     <li><a href="#">GALERIA</a></li>
                     <li class="li_desplegable">
-                        <a href="#">CARTA</a>
+                        <a href="#">CARTA<span id="flecha"> &#9660;</span></a>
                         <div class="div_desplegable">
                             <a href="#">ENTRANTES</a>
                             <a href="#">DE LA TIERRA</a>
@@ -40,46 +38,70 @@
                     <li><a href="#">RESERVAS</a></li>
                 </ul>
             </nav>
-
-            <!-- contenedor info monte -->
-            
-            <section id="monte"> 
-                <h2 id="titulo1_h2">DE LA HUERTA A TU MESA</h2>
-                <div id="wrap_huerta">
-                    <div id="imagen_huerta">
-                        <img src="imagenes/foto_huerta.jpg" id="huerta" alt="foto huerta"/>
+            </header>
+            <main>
+                <!-- contenedor info monte -->
+                <section id="monte"> 
+                    <div id="titulo_h1_rest"><h1 >RESTAURANTE LARARRANTZA</h1></div>
+                    <h2 id="titulo1_h2">DE LA HUERTA A TU MESA</h2>
+                    <div id="wrap_huerta">
+                        <div id="imagen_huerta">
+                            <img src="imagenes/foto_huerta.jpg" id="huerta" alt="foto huerta"/>
+                        </div>
+                        <div id="wrap_texto_huerta">
+                            <p>En Álava contamos un unas huertas insuperables, con unos productos fuera de serie. Por eso nuestro objetivo es acercar al comensal dichos productos, tratados con el mayor mimo y cariño para ofrecer una experiencia única. </p>
+                        </div>
                     </div>
-                    <div id="wrap_texto_huerta">
-                        <p id="texto_huerta">En Álava contamos un unas huertas insuperables, con unos productos fuera de serie. Por eso nuestro objetivo es acercar al comensal dichos productos, tratados con el mayor mimo y cariño para ofrecer una experiencia única. </p>
+                </section>
+                <!-- contenedor info monte -->
+                
+                <!-- contenedor info pesca -->
+                <section id="pesca">
+                    <h2 id="titulo2_h2">DISFRUTA DE NUESTROS PESCADOS FRESCOS DE LONJA</h2>
+                    <div id="wrap_pesca">
+                        <div id="wrap_texto_pesca">
+                            <p>Vitoria, pese a ser la única ciudad de interior de Euskadi, cuenta con una comunicación directa con los principales puertos pesqueros del <em>Mar Cantábrico</em>, lo que nos brinda la posibilidad de traer al comensal pescados de lonja capturados el mismo día, garantizando una calidad y frescura excelentes. </p>
+                        </div>
+                        <div id="imagen_puerto">
+                            <img src="imagenes/foto_puerto.jpg" id="puerto" alt="foto puerto Bermeo"/>
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- contenedor info pesca -->
-            <section id="pesca">
-                <div id="titulo2_h2"><h2>DISFRUTA DE NUESTROS PESCADOS FRESCOS DE LONJA</h2></div>
-                <div id="wrap_pesca">
-                    <div id="imagen_puerto">
-                        <img src="#" alt="foto puerto"/>
-                    </div>
-                    <div id="wrap_texto_pesca">
-                        <p id="texto_pesca"></p>
-                    </div>
-                </div>
-            </section>
-
+                </section>
+                <!-- contenedor info pesca -->
+                
+            </main>
             <!-- footer -->
-            <div class="footer">
-                <footer>
-                    <div class="wrap_logo_slowfood">
-                        <img src="imagenes/logoslowfood.png" id="slowfood" alt="slowfood"/>
-                    </div>
-                    <div class="wrap_footer">
-                        <p class="texto_footer"></p>
-                    </div>
-                </footer>
-            </div>
+           <footer class="footer">
+                <div class="wrap_logo_slowfood">
+                    <img src="imagenes/logoslowfood.png" class="slowfood" alt="slowfood"/>
+                </div>
+                <div class="wrap_texto1_footer">
+                    <p>Virgen Blanca Plaza, 10, 01001 Gasteiz, Araba<br/>
+                       Tlf: 555-148488<br/>
+                       restaurante.lararrantza@gmail.com</p>
+                </div>
+                <div class="wrap_texto2_footer">
+                    <p>sitio-restaurante - Iñaki Martin / Teodosio - 03/2022 - BootCamp Desarrollo Web Front-End</p>
+                </div>
+                <div class="wrap_rrss_footer">
+                    <a href="#" class="rrss">
+                        <img src="imagenes/twitter-logo.png" id="twitter" alt="Logo twitter">
+                        <p>@Lararrantza</p>    
+                    </a>
+                    <a href="#" class="rrss">
+                        <img src="imagenes/logo_facebook.png" id="fb" alt="Logo twitter">
+                        <p>@Lararrantza</p>    
+                    </a>
+                    <a href="#" class="rrss">    
+                        <img src="imagenes/logo_instagram.png" id="instagram" alt="Logo twitter">
+                        <p>@Lararrantza</p>    
+                    </a>
+                </div>
+            </footer>
+            
+           
 
         </div>
+        
 	</body>
 </html>

@@ -6,12 +6,25 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'meriendaregular';
+    src: url('../fuentes/merienda-regular-webfont.woff2') format('woff2'),
+         url('../fuentes/merienda-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-/*/////////////////////////////////////////// ESTILOS COMUNES ////////////////////////////////////////////*/
+@font-face {
+    font-family: 'league_spartanthin';
+    src: url('../fuentes/leaguespartan-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fuentes/leaguespartan-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+                    /*/////////////////////////////////////////// ESTILOS COMUNES ////////////////////////////////////////////*/
 body {
     margin: 0;
-    font-family: sans-serif;
 }
 
 .wrap_principal {
@@ -23,64 +36,88 @@ body {
 
 header {
     display: flex;
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 125px;
+    background-color: #197783;
+    padding: 0;
 }
 
-.titulo_h1 {
-    font-family: 'catalogueregular';
-}
 
 .wrap_logo_restaurante {
-
+    padding: 0;
+    margin: 0;
+    width: 20%
 }
 
 #logo_restaurante {
-    width: 20%;
+    width: 40%;
+    padding: 0.5em 2em;
+    margin: 0;
 }
 
 /* navegador desplegable */
+
+#flecha {
+    font-size: 10px;
+    vertical-align: top;
+}
+
+nav{
+    display: flex;
+}
 
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
-    background-color: #666688; 
+    background-color: #197783; 
     margin: 0;
     padding: 0;
+    
+    
 }
 
 nav li {
     display: inline-block;
+    border-radius: 15%;
+    margin-left: 20px;
+    
 }
 
 nav li a {
     display: inline-block;                          
     text-decoration: none;
     color: white;
-    padding: 12px 15px;  
+    font-family: sans-serif;
+    padding: 12px 20px; 
+    
 }
 
 nav li:hover {
-    background-color: #335;
+    background-color: #22b78f;
 }
 
 .div_desplegable{
-    background-color: #f9f9f9; 
+    background-color: #197783; 
     box-shadow: 5px 8px 25px 0px rgba(0,0,0, 0.2);
     position: absolute;
     display: none;
+    border-radius: 12%;
     
 }
 
 .div_desplegable a {
     padding: 9px 15px;
-    color: #335;
+    color: white;
     display: block;
+    border-radius: 15%;
 }
 
 .div_desplegable a:hover {
-    background-color: #e5e5f5;
+    background-color: #22b78f;
 }
 
 .li_desplegable:hover .div_desplegable{
@@ -90,20 +127,74 @@ nav li:hover {
 
 /* navegador desplegable */
 
-.footer{
-    
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+    background-color: #197783;
+    font-family: 'league_spartanthin';
 }
 
 .wrap_logo_slowfood {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding: 0;
+    margin: 0;
 }
 
-.wrap_footer  {
-
+.slowfood {
+    width: 70%;
+    height: 80%;
 }
 
-.texto_footer {
+.wrap_texto1_footer  {
+    width: 30%; 
+}
 
+.wrap_texto1_footer p{
+    padding: 0;
+    padding-top: 5px;
+    color: white;
+    line-height: 20px; 
+}
+
+.wrap_texto2_footer {
+    width: 40%;
+}
+
+.wrap_texto2_footer p{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.wrap_rrss_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20%;
+    
+}
+
+#twitter, #fb, #instagram {
+    padding: 3px;
+    width: 10%;
+}
+
+.rrss {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding-left: 3em;
+}
+
+a p {
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 5px;
 }
 
 /*/////////////////////////////////////////// FIN ESTILOS COMUNES ////////////////////////////////////////////*/
@@ -120,6 +211,24 @@ nav li:hover {
     
 }
 
+#titulo_h1_rest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#titulo_h1_rest h1{
+    font-family: 'catalogueregular';
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+    padding: 0.25em;
+    font-size: 35px;
+    text-align: center;
+    width: 35%;
+    border: solid 4px #197783;
+    border-radius: 15%;
+}
 
 section #titulo1_h2 {
     padding: 15px;
@@ -128,7 +237,8 @@ section #titulo1_h2 {
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
     border-top: ridge 4px greenyellow;
-    border-bottom: ridge 4px greenyellow;;
+    border-bottom: ridge 4px greenyellow;
+    font-family: 'meriendaregular';
 }
 
 #wrap_huerta, #wrap_pesca {
@@ -144,9 +254,8 @@ section #titulo1_h2 {
 #imagen_huerta {
     padding: 0px;
     margin: 0px;
-    margin-top: 3em;
-    width: 60%;
-    
+    margin-top: 6em;
+    width: 60%;   
 }
 
 #huerta {
@@ -156,16 +265,20 @@ section #titulo1_h2 {
 }
 
 #wrap_texto_huerta {
-    margin-top: 4em;
-    background-color: rgba(240, 248, 255, 0.5);
+    margin-top: 7em;
+    background-color: rgba(240, 248, 255, 0.7);
     width: 60%;
     border: ridge 4px greenyellow;
     padding: 15px;
+    font-family: 'league_spartanthin';
 }
 
-#texto_huerta {
+#wrap_texto_huerta p {
     padding: 5px;
     color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
 }
 #pesca {
     display: flex;
@@ -174,23 +287,47 @@ section #titulo1_h2 {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    
 }
 
 section #titulo2_h2 {
-    padding-left: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    padding-left: 8%;
     margin-top: 3.5em;
-    color: darkgreen;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border-top: ridge 4px #5fa7fc;
+    border-bottom: ridge 4px #5fa7fc;
+    font-family: 'meriendaregular';
 }
-#imagen_puerto {
 
+#imagen_puerto {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 6em;
+    width: 60%;
+    text-align: right;
+}
+
+#puerto {
+    width: 80%;
+    border: ridge 4px #5fa7fc;
 }
 
 #wrap_texto_pesca {
-
+    margin-top: 7em;
+    background-color: rgba(240, 248, 255, 0.7);
+    width: 60%;
+    border: ridge 4px #5fa7fc;
+    padding: 15px;
+    font-family: 'league_spartanthin';
+    
 }
 
-#texto_pesca {
-    
+#wrap_texto_pesca p{
+    padding: 5px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold; 
 }
 
