@@ -42,8 +42,19 @@ header {
     max-height: 125px;
     background-color: #197783;
     padding: 0;
+    position: sticky;
+    top: 0;
 }
 
+#header_carta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 125px;
+    background-color: #197783;
+    padding: 0;
+}
 
 .wrap_logo_restaurante {
     padding: 0;
@@ -57,6 +68,28 @@ header {
     margin: 0;
 }
 
+.titulo_h1_rest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.titulo_h1_rest h1{
+    font-family: 'catalogueregular';
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+    padding: 0.25em;
+    font-size: 35px;
+    text-align: center;
+    width: 35%;
+    border: solid 4px #197783;
+    border-radius: 15%;
+}
+
+main {
+    background-color: azure;
+}
 /* navegador desplegable */
 
 #flecha {
@@ -91,7 +124,7 @@ nav li a {
     display: inline-block;                          
     text-decoration: none;
     color: white;
-    font-family: sans-serif;
+    font-family: 'league_spartanthin';
     padding: 12px 20px; 
     
 }
@@ -127,6 +160,8 @@ nav li:hover {
 
 /* navegador desplegable */
 
+/* footer*/
+
 .footer {
     display: flex;
     justify-content: flex-start;
@@ -146,35 +181,43 @@ nav li:hover {
 }
 
 .slowfood {
-    width: 70%;
-    height: 80%;
+    width: 70%;   
 }
 
 .wrap_texto1_footer  {
-    width: 30%; 
+   
+    
+    width: 25%; 
 }
 
 .wrap_texto1_footer p{
     padding: 0;
-    padding-top: 5px;
     color: white;
     line-height: 20px; 
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .wrap_texto2_footer {
-    width: 40%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrap_texto2_footer p{
-    padding-top: 20px;
     text-align: center;
     color: white;
+    font-size: 0.95em;
 }
 
 .wrap_rrss_footer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     width: 20%;
     
 }
@@ -191,7 +234,7 @@ nav li:hover {
     padding-left: 3em;
 }
 
-a p {
+.rrss p {
     margin: 0;
     padding-top: 8px;
     padding-left: 5px;
@@ -199,7 +242,7 @@ a p {
 
 /*/////////////////////////////////////////// FIN ESTILOS COMUNES ////////////////////////////////////////////*/
 
-
+/*//////////////////////////////////////////inicio.html/////////////////////////////////////////*/
 
 #monte {
     display: flex;
@@ -211,24 +254,7 @@ a p {
     
 }
 
-#titulo_h1_rest {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-
-#titulo_h1_rest h1{
-    font-family: 'catalogueregular';
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 0;
-    padding: 0.25em;
-    font-size: 35px;
-    text-align: center;
-    width: 35%;
-    border: solid 4px #197783;
-    border-radius: 15%;
-}
 
 section #titulo1_h2 {
     padding: 15px;
@@ -236,8 +262,8 @@ section #titulo1_h2 {
     margin-top: 3.5em;
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
-    border-top: ridge 4px greenyellow;
-    border-bottom: ridge 4px greenyellow;
+    border-top: ridge 4px #22b78f;
+    border-bottom: ridge 4px #22b78f;
     font-family: 'meriendaregular';
 }
 
@@ -260,7 +286,7 @@ section #titulo1_h2 {
 
 #huerta {
     width: 80%;
-    border: ridge 4px greenyellow;
+    border: ridge 4px #22b78f;
     
 }
 
@@ -268,7 +294,7 @@ section #titulo1_h2 {
     margin-top: 7em;
     background-color: rgba(240, 248, 255, 0.7);
     width: 60%;
-    border: ridge 4px greenyellow;
+    border: ridge 4px #22b78f;
     padding: 15px;
     font-family: 'league_spartanthin';
 }
@@ -296,8 +322,8 @@ section #titulo2_h2 {
     margin-top: 3.5em;
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
-    border-top: ridge 4px #5fa7fc;
-    border-bottom: ridge 4px #5fa7fc;
+    border-top: ridge 4px #197783;
+    border-bottom: ridge 4px #197783;
     font-family: 'meriendaregular';
 }
 
@@ -311,14 +337,14 @@ section #titulo2_h2 {
 
 #puerto {
     width: 80%;
-    border: ridge 4px #5fa7fc;
+    border: ridge 4px #197783;
 }
 
 #wrap_texto_pesca {
     margin-top: 7em;
     background-color: rgba(240, 248, 255, 0.7);
     width: 60%;
-    border: ridge 4px #5fa7fc;
+    border: ridge 4px #197783;
     padding: 15px;
     font-family: 'league_spartanthin';
     
@@ -330,4 +356,11 @@ section #titulo2_h2 {
     font-size: 18px;
     font-weight: bold; 
 }
+
+/*//////////////////////////////////////////inicio.html/////////////////////////////////////////*/
+
+/*//////////////////carta.html//////////////////////////*/
+
+
+
 
