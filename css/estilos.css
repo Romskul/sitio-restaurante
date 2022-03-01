@@ -437,8 +437,6 @@ section #titulo2_h2 {
     color: white;
 }
 
-
-
 #wrap_texto_cabecera {
     display: flex;
     flex-direction: column; 
@@ -452,8 +450,14 @@ section #titulo2_h2 {
 }
 
 #wrap_texto_cabecera h1 {
-    font-family: 'catalogueregular';
-    font-size: 2em;
+    font-family: 'meriendaregular';
+    font-size: 1.75em;
+}
+
+#separacion {
+    width: 75%;
+    height: 1px;
+    border-bottom: #22b78f solid 2px;
 }
 
 #wrap_texto_cabecera p {
