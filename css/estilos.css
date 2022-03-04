@@ -48,16 +48,6 @@ body {
     top: 0;
 }
 
-#header_carta {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 125px;
-    background-color: #197783;
-    padding: 0;
-}
-
 .wrap_logo_restaurante {
     padding: 0;
     margin: 0;
@@ -70,12 +60,22 @@ body {
     margin: 0;
 }
 
+.banderas {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    margin-left: 5em;
+}
+
+.bandera img{
+    width: 1.75em;
+}
+
 .titulo_h1_rest {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .titulo_h1_rest h1{
     font-family: 'catalogueregular';
@@ -394,6 +394,16 @@ section #titulo2_h2 {
 
 /*///////////////////////////////////////////carta.html/////////////////////////////////////////*/
 
+#header_carta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 125px;
+    background-color: #197783;
+    padding: 0;
+}
+
 #cabecera_carta {
     display: flex;
     flex-direction: column;
@@ -557,7 +567,7 @@ section article p {
 
 /*///////////////////////////////////////////carta.html/////////////////////////////////////////*/
 
-/*///////////////////////////////////////////galeria.html//////////////////////////////////////*/
+/*///////////////////////////////////////////galeria.html///////////////////////////////////////*/
 
 
 
@@ -589,16 +599,7 @@ section article p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+textarea {
+    resize: none;          bloqueo de redimension para el textarea del formulario
+}*/
