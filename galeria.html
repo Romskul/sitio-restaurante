@@ -20,8 +20,8 @@
                  
                 <nav>
                     <ul>
-                        <li><a class="pag_activa" href="#">INICIO</a></li>
-                        <li><a href="galeria.html">LARARRANTZA</a></li>
+                        <li><a href="Inicio.html">INICIO</a></li>
+                        <li><a href="filosofia.html">FILOSOFÍA</a></li>
                         <li class="li_desplegable">
                             <a href="carta.html">CARTA<span id="flecha"> &#9660;</span></a>
                             <div class="div_desplegable">
@@ -33,6 +33,7 @@
                             </div>
                         </li>
                         <li><a href="equipo.html">EQUIPO</a></li>
+                        <li><a class="pag_activa" href="galeria.html">GALERÍA</a></li>
                         <li><a href="reservas.html">RESERVAS</a></li>
                     </ul>
                 </nav>
@@ -43,64 +44,70 @@
                 </div>
             </header>
             <main>
-                <section id="wrapper_galeria">
-                    <article class="contenedor_galeria">
-                        <div id="texto_entorno"><p></p></div>
-                        <div class="wrapper">
-                            <div class="slider" id="slider">
-                                <ul class="slides">
-                                    <li class="slide">
-                                        <a href="#">
-                                        <p class="caption">Texto llamativo</p>
-                                        <img src="imagenes/comedor-restaurante-vitoria.jpg" alt="photo 1">
-                                        </a>
-                                    </li>
-                                    <li class="slide" id="slide2">
-                                        <a href="#">
-                                        <p class="caption">Texto llamativo</p>
-                                        <img src="imagenes/comedor2-restaurante-vitoria.jpg" alt="photo 2">
-                                        </a>
-                                    </li>
-                                        <li class="slide" id="slide3">
-                                        <a href="#">
-                                        <p class="caption">Texto llamativo</p>
-                                        <img src="imagenes/hall-restaurante-vitoria.jpg" alt="photo 3">
-                                        </a>
-                                    </li>
-                                        <li class="slide" id="slide4">
-                                        <a href="#">
-                                        <p class="caption">Texto llamativo</p>
-                                        <img src="imagenes/cocina-abierta-restaurante-vitoria.jpg" alt="photo 4">
-                                        </a>
-                                    </li>
-                                    <li class="slide" id="slide5">
-                                        <a href="#">
-                                        <p class="caption">Texto llamativo</p>
-                                        <img src="imagenes/cocina-restaurante-vitoria.jpg" alt="photo 5">
-                                        </a>
-                                    </li>
-                                        <li class="slide" id="slide6">
-                                        <a href="#">
-                                        <p class="caption">Texto llamativo</p>
-                                        <img src="imagenes/comedor-restaurante-vitoria.jpg" alt="photo 1">
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="slider-controler">
-                                    <li><a href="#slide1">&bullet;</a></li>
-                                    <li><a href="#slide2">&bullet;</a></li>
-                                    <li><a href="#slide3">&bullet;</a></li>
-                                    <li><a href="#slide4">&bullet;</a></li>
-                                    <li><a href="#slide5">&bullet;</a></li>
-                                </ul>
+                <section id="contenedor_galeria">
+                    <div class="titulo_h1_rest"><h1 >RESTAURANTE LARARRANTZA <br/> - GALERIA - </h1></div>
+                    <div id="titulo_entorno"><h2>Nuestro Entorno</h2></div>
+                    <article id="wrapper_entorno">
+                        
+                        <div id="visor_restaurante">
+                            <div id="slider">
+                                <img src="imagenes/comedor-restaurante-vitoria.jpg"/><!--
+                             --><img src="imagenes/comedor2-restaurante-vitoria.jpg"/><!--
+                             --><img src="imagenes/hall-restaurante-vitoria.jpg"/><!--
+                             --><img src="imagenes/cocina-restaurante-vitoria.jpg"/><!--
+                             --><img src="imagenes/comedor-restaurante-vitoria.jpg"/>
                             </div>
                         </div>
+                        <div id="texto_entorno"><p>Quo quamquam ita nescius, fabulas elit ullamco. A ad summis appellat, summis 
+                            expetendis proident. Appellat esse ingeniis, offendit legam ea consequat 
+                            distinguantur. Tempor non ipsum in eu et velit laboris. Do elit dolor de tempor 
+                            id aliquip relinqueret se mentitum. Hic ab duis elit eram, legam tractavissent 
+                            ingeniis minim incurreret, ad velit mentitum exercitation, quis exquisitaque 
+                            ullamco cillum quamquam, quo enim legam fugiat expetendis, est tamen dolore 
+                            cillum admodum a non incurreret iis senserit sed cernantur sunt tempor arbitror.</p>
+                        </div>
                     </article>
-                
-                
+                    <div id="titulo_platos"><h2>Nuestros platos</h2></div>
+                    
+                    <article id="wrapper_platos">
+                        
+                        <div id="texto_platos"><p>Quo quamquam ita nescius, fabulas elit ullamco. A ad summis appellat, summis 
+                            expetendis proident. Appellat esse ingeniis, offendit legam ea consequat 
+                            distinguantur. Tempor non ipsum in eu et velit laboris. Do elit dolor de tempor 
+                            id aliquip relinqueret se mentitum. Hic ab duis elit eram, legam tractavissent 
+                            ingeniis minim incurreret, ad velit mentitum exercitation, quis exquisitaque 
+                            ullamco cillum quamquam, quo enim legam fugiat expetendis, est tamen dolore 
+                            cillum admodum a non incurreret iis senserit sed cernantur sunt tempor arbitror.</p>
+                        </div>
+                        <div id="wrapper_deslizador">
+                        <ul class="deslizador">
+                                <li>
+                                    <input type="radio" id="slide1" name="boton" checked>
+                                    <label for="slide1"></label>
+                                    <img src="imagenes/arroz.png" alt="Panel 1">
+                                </li>
+                                <li>
+                                    <input type="radio" id="slide2" name="boton">
+                                    <label for="slide2"></label>
+                                    <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/980517/icehut_sm.jpg" alt="Panel 2">
+                                </li>
+                                <li>
+                                    <input type="radio" id="slide3" name="boton">
+                                    <label for="slide3"></label>
+                                    <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/943660/hq_sm.jpg" alt="Panel 3">
+                                </li>
+                                <li>
+                                    <input type="radio" id="slide4" name="boton">
+                                    <label for="slide4"></label>
+                                    <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/599584/home.jpg" alt="Panel 4">
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                        
                 </section>
             
-    
+                        
                 
                 
                 
