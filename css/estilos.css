@@ -80,7 +80,7 @@ body {
 
 .titulo_h1_rest h1{
     font-family: 'catalogueregular';
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     margin-bottom: 0;
     padding: 0.25em;
     font-size: 2em;
@@ -277,6 +277,57 @@ nav li:hover {
      opacity: 1;
 }
 /*/////////////////////////////////////////// FIN ESTILOS COMUNES ////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////inicio.html/////////////////////////////////////////*/
+
+#contenedor_inicio {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/comedor2-restaurante-vitoria.jpg);
+    background-size: cover;
+}
+
+#wrapper_inicio {
+    display: flex;
+    margin-top: 2em;
+    height: 50em;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#texto_inicio {
+    width: 40%; 
+    background-color: rgba(240, 248, 255, 0.8);
+    margin-left: 6em;
+    border: ridge 4px #197783;
+    margin-bottom: 12em;
+}
+
+#subtitulo_inicio {
+    width: 85%;
+    margin: 0;
+    padding-left: 2.5em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'meriendaregular';
+    
+}
+#subtitulo_inicio h2 {
+    border-bottom: solid 2px #22b78f;
+}
+
+#texto_inicio p {
+    padding: 0 2em;
+    margin-bottom: 2em;  
+    font-family: 'league_spartanthin';
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+
+/*//////////////////////////////////////////inicio.html/////////////////////////////////////////*/
+
 
 /*//////////////////////////////////////////filosofia.html/////////////////////////////////////////*/
 
