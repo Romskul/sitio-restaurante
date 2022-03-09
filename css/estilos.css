@@ -228,7 +228,7 @@ nav li:hover {
     
 }
 
-#twitter, #fb, #instagram {
+.twitter, .fb, .instagram {
     padding: 3px;
     width: 10%;
 }
@@ -975,16 +975,167 @@ section article p {
     font-size: 1.2em;
     font-weight: bold;
     line-height: 1.2em;  
+}
+
+/*//////////////////////////////////// Reserva.html//////////////////////////////////////*/
+
+#vitoria{
+    background-image:url(../imagenes/vitoria.png);
+    background-size: cover;
+}
+
+#ubicacion {
+    display: flex;
+    flex-direction: column;
+}
+
+#subtitulo_ubicacion {
+    font-family: 'meriendaregular';
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-top: ridge 4px #22b78f;
+    border-bottom: ridge 4px #22b78f;
+    font-family: 'meriendaregular';
+    margin-top: 5em;  
+}
+
+#subtitulo_ubicacion h2 {
+    margin: 0;
+    padding: 1em 1em;
+}
+
+#wrapper_ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#texto_ubicacion p{
+    padding: 0 1em;
+    margin-bottom: 2em;  
+    font-family: 'league_spartanthin';
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+#texto_ubicacion {
+    width: 30%;
+    margin-left: 7em;
+    margin-right: 10em;
+    margin-top: 3em;
+    margin-left: 6em;
+    border: ridge 4px #197783;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#mapa {
+    margin-top: 5em;
+}
+
+#formulario {
+    display: flex;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    justify-content: space-around;
+}
+
+
+#calendario {
+    
+}
+
+#formu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#formu form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: rgba(240, 248, 255, 0.8);
+    padding: 1em;
+}
+
+#formu label {  
+    font-family: 'league_spartanthin';
+    font-weight: bold;
+    line-height: 1.2em;
+} 
 
 
 
+[type="text"] {
+    width: 100%;
+    border: solid 2px #aaa;
+    border-radius: 5px;
+    margin: 8px 0px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 40px;
+    margin-bottom: 1.5em;
+}
+[type="email"] {
+    width: 100%;
+    border: solid 2px #aaa;
+    border-radius: 5px;
+    margin: 8px 0px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 40px;
+    margin-bottom: 1.5em;
+}
 
+[type="tel"] {
+    width: 100%;
+    border: solid 2px #aaa;
+    border-radius: 5px;
+    margin: 8px 0px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 40px;
+    margin-bottom: 1.5em;
+} 
+#email, #nombre, #tel {
+    width: 80%;
+}
 
+#formu textarea {
+    resize: none; 
+    margin-bottom: 1.5em;
+}
 
+#formu p {
+    padding: .5em;
+    background-color: rgba(240, 248, 255, 0.8);
+}
 
+#formu span {
+    color: red;
+}
 
+[type="submit"]{
+    width: 20%;
+    padding: 0;
+    padding: .4em 0;
+    border: solid 2px #197783;
+    border-radius: 15%;
+    align-self: center;
+    margin-bottom: 1em;
+}
 
-/*
-textarea {
-    resize: none;          bloqueo de redimension para el textarea del formulario
-}*/
+[type="reset"]{
+    width: 30%;
+    padding: .4em 0;
+    border: solid 2px #197783;
+    border-radius: 15%;
+    align-self: center;
+}

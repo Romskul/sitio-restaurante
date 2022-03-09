@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
         <link href="css/estilos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 
 	<body>
@@ -44,22 +45,65 @@
                 </div>
             </header>
             <main>
-                <section id="contenedor_galeria">
+                <section id="vitoria">
+                    <div class="titulo_h1_rest"><h1> - RESERVAS -<br/>RESTAURANTE LARARRANTZA</h1></div>
+                
+                        <article id="ubicacion">
+                            <div id="subtitulo_ubicacion"> <h2>UBICACION</h2></div>
+                            <div id="wrapper_ubicacion">
+
+                                <div id="texto_ubicacion">
+                                    <p>Tenemos la suerte de disponer de un emplazamiento privilegiado en la plaza
+                                    de la virgen blanca, céntrico y perfectamente comunicado.</p>
+                                    <span><p>NO DUDES EN VISITARNOS.</p></span>
+                                </div>
+
+                                <div id="mapa">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.261409631984!2d-2.6751879845669113!3d42.84621317915721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc26ea2e76493%3A0x64603a61f82e35e8!2sVirgen%20Blanca%20Plaza%2C%2010%2C%2001001%20Gasteiz%2C%20Araba!5e0!3m2!1ses!2ses!4v1646404539408!5m2!1ses!2ses" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                                </div>
+                            </div>
+                        </article>
                     
+                        <article id="formulario">
+
+                                <div id="calendario">
+                                     <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%2333B679&ctz=Europe%2FMadrid&title=Restaurante%20Lararrantza&showNav=1&showPrint=1&showTabs=1&showCalendars=1&showTz=1&src=Ym9zb2thcHV5ZXRlb2Rvc2lvQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXNkNzAwbHQ1MXJrdDJvdGt0bTZyMjU4bDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZXMtNDE5LnNwYWluI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuZ3EjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%234285F4&color=%230B8043&color=%230B8043" style="border:solid 1px #777" width="700" height="600" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div id="formu">
+
+                                    <form name="formulario_html" action="archivo_examen.php"  method="post">
+                                    
+                                        <label for="nombe"><span>*</span>Nombre y Apellidos:</label>
+                                        <div class="div_input">
+                                            <input type="text" name="nombre" id="nombre" placeholder="Escriba aquí su nombre y apellidos"/>
+                                            
+                                        </div>
+                                        <label for="email"><span>*</span>Email:</label>
+                                        <div class="div_input">
+                                            <input type="email" name="email" id="email" required placeholder="Escriba su email"/>
+                                            
+                                        </div>
+                                        <label for="tel"><span>*</span>Teléfono:</label>
+                                        <div class="div_input">
+                                            <input type="tel" name="tel" id="tel" placeholder="Escriba su tlfno de contacto" requered/>
+                                            
+                                        </div>
+                                        <label for="mensaje">Comentario</label>
+                                        <textarea id="mensaje" name="mensaje" rows="10" cols="" placeholder="deja tu comentario"></textarea>
+
+
+                                        <input type="submit" value="Enviar"/>
+                                        <input type="reset" value="Borrar datos"/>
+                                    
+                                        <p><span>*</span>Campos obligatorios.</p>
+                                    </form>
+                                    
+                                    <p>Si sufre de algún tipo de alergia,háznolo saber en los comentarios</p>
+
+                                </div>
+                        </article>
                 </section>
-            
-                        
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
             </main>
             <!-- footer -->
            <footer class="footer">
@@ -76,15 +120,15 @@
                 </div>
                 <div class="wrap_rrss_footer">
                     <a href="#" class="rrss">
-                        <img src="imagenes/twitter-logo.png" id="twitter" alt="Logo twitter">
+                        <img src="imagenes/twitter-logo.png" class="twitter" alt="Logo twitter">
                         <p>@Lararrantza</p>    
                     </a>
                     <a href="#" class="rrss">
-                        <img src="imagenes/logo_facebook.png" id="fb" alt="Logo twitter">
+                        <img src="imagenes/logo_facebook.png" class="fb" alt="Logo twitter">
                         <p>@Lararrantza</p>    
                     </a>
                     <a href="#" class="rrss">    
-                        <img src="imagenes/logo_instagram.png" id="instagram" alt="Logo twitter">
+                        <img src="imagenes/logo_instagram.png" class="instagram" alt="Logo twitter">
                         <p>@Lararrantza</p>    
                     </a>
                 </div>
