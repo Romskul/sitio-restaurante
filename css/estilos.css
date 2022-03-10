@@ -365,7 +365,7 @@ section #titulo1_h2 {
     padding: 0px;
     margin: 0px;
     margin-top: 6em;
-    width: 60%;   
+    max-width: 60%;   
 }
 
 #huerta {
@@ -376,7 +376,7 @@ section #titulo1_h2 {
 #wrap_texto_huerta {
     margin-top: 7em;
     background-color: rgba(240, 248, 255, 0.7);
-    width: 60%;
+    max-width: 60%;
     border: ridge 4px #22b78f;
     padding: 15px;
     font-family: 'league_spartanthin';
@@ -413,7 +413,7 @@ section #titulo2_h2 {
     padding: 0px;
     margin: 0px;
     margin-top: 6em;
-    width: 60%;
+    max-width: 60%;
     text-align: right;
 }
 
@@ -425,7 +425,7 @@ section #titulo2_h2 {
 #wrap_texto_pesca {
     margin-top: 7em;
     background-color: rgba(240, 248, 255, 0.7);
-    width: 60%;
+    max-width: 60%;
     border: ridge 4px #197783;
     padding: 15px;
     font-family: 'league_spartanthin';
@@ -640,8 +640,7 @@ section article p {
 }
 
 #texto_entorno {
-    width: 40%;
-    max-width: 100%;
+    max-width: 40%;
     border: ridge 6px #197783;
     padding: 1em 1em;
     font-family: 'league_spartanthin';
@@ -791,7 +790,7 @@ section article p {
     transition: .35s;
 }
 
-.deslizador label:after {
+.deslizador label::after {
     position: absolute;
     bottom: -.2em;
     left: -.2em;
@@ -908,7 +907,7 @@ section article p {
 }
 
 #texto_fundador {
-    width: 40%;
+    max-width: 40%;
     border: solid 6px #197783;
     padding: 1em 1em;
     font-family: 'league_spartanthin';
@@ -928,7 +927,7 @@ section article p {
 }
 
 #imagen_chef {
-    width: 30%;
+    max-width: 30%;
     margin-top: 5em;
     margin-right: 2em;
 }
@@ -951,7 +950,7 @@ section article p {
 }
 
 #imagen_equipo {
-    width: 30%;
+    max-width: 30%;
     margin: 5em 2em;
     
 }
@@ -965,7 +964,7 @@ section article p {
 }
 
 #texto_equipo {
-   width: 40%;
+    max-width: 40%;
     border: solid 6px #197783;
     padding: 1em 1em;
     font-family: 'league_spartanthin';
@@ -984,7 +983,7 @@ section article p {
     line-height: 1.2em;  
 }
 
-/*//////////////////////////////////// Reserva.html//////////////////////////////////////*/
+/*////////////////////////////////////reservas.html//////////////////////////////////////*/
 
 #vitoria{
     background-image:url(../imagenes/vitoria.png);
@@ -999,7 +998,7 @@ section article p {
 #subtitulo_ubicacion {
     font-family: 'meriendaregular';
     font-size: 1em;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
     border-top: ridge 4px #22b78f;
     border-bottom: ridge 4px #22b78f;
@@ -1029,13 +1028,13 @@ section article p {
 }
 
 #texto_ubicacion {
-    width: 30%;
+    max-width: 30%;
     margin-left: 7em;
     margin-right: 10em;
     margin-top: 3em;
     margin-left: 6em;
     border: ridge 4px #197783;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #mapa {
@@ -1049,22 +1048,17 @@ section article p {
     justify-content: space-around;
 }
 
-
-#calendario {
-    
-}
-
 #formu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    max-width: 40%;
 }
 
 #formu form{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 75%;
     background-color: rgba(240, 248, 255, 0.8);
     padding: 1em;
 }
@@ -1164,9 +1158,20 @@ textarea:focus {
     box-shadow: 0 0 8px darkcyan;
 }
 
-#formu p {
+
+#formu #obligatorio {
+    font-size: 1em;
     padding: .5em;
     background-color: rgba(240, 248, 255, 0.8);
+    border-radius: 5px;
+}
+
+#commit {
+    font-size: 1em;
+    max-width: 100%;
+    padding: .5em;
+    background-color: rgba(240, 248, 255, 0.8);
+    border-radius: 5px;
 }
 
 #formu span {
@@ -1191,13 +1196,14 @@ textarea:focus {
     align-self: center;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px)  {
     
 /*//////////////Media Querys comunes Header & Footer////////////*/   
 header {
     flex-direction: column;
     justify-content:flex-start;
     padding:0;
+    min
 }
     
 .wrap_logo_restaurante {
@@ -1220,6 +1226,7 @@ nav ul li{
 .banderas{
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 1em;
 }
     
 .bandera img {
@@ -1231,7 +1238,8 @@ nav ul li{
 }
     
 .wrap_logo_euskolabel {
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     align-self: center;
     order:4;
 }
@@ -1292,11 +1300,14 @@ nav ul li{
     
 #titulo1_h2 {
     margin: 0;
+    font-size: 1.2em;
+    text-align: center;
 }
     
 #imagen_huerta {
-    flex: 0 0 15em;
+    max-width: 80%;
     margin: 0;
+    
 }
     
 #huerta{
@@ -1305,16 +1316,19 @@ nav ul li{
 }
     
 #wrap_texto_huerta {
+    max-width: 80%;
     margin: 0;
     margin-top: 2em;
 }
 
 #titulo2_h2{
     margin:0;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 #imagen_puerto {
-    flex: 0 0 15em;
+    max-width: 80%;
     margin: 0;  
 }    
 #puerto{
@@ -1322,14 +1336,23 @@ nav ul li{
     margin-top: 2em; 
 }
 #wrap_texto_pesca {
+    max-width: 80%;
     order:2;
     margin: 0;
     margin-top: 2em;
-}    
-/*//////////////Media Querys filosofia.html//////////////////*/    
+} 
+
+/*//////////////Media Querys filosofia.html//////////////////*/ 
+    
+/*//////////////Media Querys galeria.html//////////////////*/ 
+   
 #visor_restaurante {
     margin-bottom: 5em;
 }
+#titulo_entorno h2 {
+    font-size: 1.2em;
+    text-align: center;
+}   
     
 #wrapper_entorno, #wrapper_platos {
     flex-direction: column;
@@ -1340,7 +1363,94 @@ nav ul li{
 }
     
 #texto_platos {
+    max-width: 80%;
     order: 2;
 }
+#texto_entorno {
+    max-width: 80%;
+}
+/*//////////////Media Querys filosofia.html//////////////////*/ 
     
+/*//////////////Media Querys equipo.html/////////////////////*/ 
+
+#wrapper_fundador {
+    flex-direction: column;
+}
+    
+#titulo_fundador h2{
+    font-size: 1.2em;
+    text-align: center;
+}
+#texto_fundador{
+    max-width: 80%; 
+    order:2;
+    margin-top: 4em;
+} 
+
+#imagen_chef {
+    max-width: 60%;
+}   
+
+#titulo_equipo {
+    font-size: 1.2em;
+    text-align: center;     
+}
+    
+#titulo_equipo h2{
+    font-size: 1em;
+    text-align: center;
+}    
+#wrapper_equipo {
+    flex-direction: column;
+}    
+
+#imagen_equipo {
+    max-width: 60%;
+}
+    
+#texto_equipo{
+    max-width: 80%;
+    margin-bottom: 3em;
+}     
+/*//////////////Media Querys equipo.html/////////////////////*/     
+
+/*//////////////Media Querys reservas.html/////////////////////*/    
+
+#subtitulo_ubicacion h2 {
+    font-size: 1em;
+    text-align: center;     
+}
+
+#wrapper_ubicacion {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#texto_ubicacion {
+    max-width: 70%; 
+    margin: 0;
+    margin-top: 4em;
+}
+    
+#mapa {
+    padding: 0;
+}
+
+#formulario {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formu{
+    max-width: 60%;
+}
+    
+#formu form{
+    width: 80%;
+    margin-top: 2em;
+}
+#formu #obligatorio {
+    max-width: 100%;
+}
 }
