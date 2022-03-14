@@ -173,7 +173,7 @@ nav li:hover {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     max-width: 100%;
     background-color: #197783;
@@ -194,7 +194,10 @@ nav li:hover {
 }
 
 .wrap_texto1_footer  {
-    flex: 0 0 25%; 
+    max-width: 30%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrap_texto1_footer p{
@@ -202,14 +205,11 @@ nav li:hover {
     color: white;
     line-height: 20px; 
     font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    align-self: center;
 }
 
 .wrap_texto2_footer {
-    flex:0 0 45%;
+    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,28 +223,29 @@ nav li:hover {
 
 .wrap_rrss_footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 10%;
     
 }
 
-.twitter, .fb, .instagram {
-    padding: 3px;
-    width: 10%;
+.twitter, .instagram {
+    margin-right: .5em;
+    margin-left: .35em;
+    max-width: 50%;
+}
+.fb {
+    padding: 0;
+    margin: 0;
+    max-width: 50%;
 }
 
 .rrss {
-    display: flex;
+    max-width: 33%;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     color: white;
-    padding-left: 3em;
-}
-
-.rrss p {
-    margin: 0;
-    padding-top: 8px;
-    padding-left: 5px;
 }
 
 .vuelta_inicio {
@@ -1239,36 +1240,47 @@ nav ul li{
 .wrap_logo_euskolabel {
     margin-top: 2em;
     margin-bottom: 2em;
+   
     align-self: center;
     order:4;
 }
     
 .euskolabel {
     flex: 1 0 10em;
+     margin-right: .75em;
 
 }
     
 .wrap_texto1_footer  {
     flex: 1 0 auto; 
+    align-self: center;
     text-align: center;
     order:1
 }
 
 .wrap_texto2_footer {
+    max-width: 100%;
+    align-self: center;
     order:2
 }
 
 
 .wrap_rrss_footer {
+    max-width: 25%;
     flex-direction: row;
+    align-items: center;
     align-self: center;
     order:3;
 }
 
-.twitter, .fb, .instagram {
-    width: 20%;
+.twitter, .instagram {
+    width: 55%;
 }
     
+.fb {
+    margin-top: 0.25em;
+    width: 60%;  
+}
 .vuelta_inicio {
     bottom: 0;
     right: 0;
